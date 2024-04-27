@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('img/7.png'); /* Agrega el fondo general */
+  background-size: cover; /* Para cubrir todo el cuerpo */
+  background-position: center; /* Para centrar la imagen */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Estilos para el encabezado */
+.App-header {
+  background-color: #282c34; /* Color de fondo */
+  min-height: 20vh; /* Cambia la altura mínima según tus necesidades */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+  position: relative; /* Permite posicionar el logo */
+}
+
+/* Estilos para el logo */
+.App-logo {
+  position: absolute; /* Posiciona el logo */
+  top: 20px; /* Distancia desde la parte superior */
+  left: 20px; /* Distancia desde la izquierda */
+  width: 100px; /* Ancho del logo */
+  height: auto; /* Altura ajustable según el ancho */
+}
+
+.app-container{
+  color: aliceblue;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; /* Ajusta el espacio entre los botones */
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #343a40; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  padding: 40px 0; /* Espaciado interior superior e inferior */
+  position: fixed; /* Fijar el pie de página */
+  bottom: 0; /* Colocarlo en la parte inferior */
+  width: 100%; /* Ancho completo */
+  text-align: center; /* Centrar el contenido */
+}
+
+
+.input-field input::placeholder {
+  text-shadow: 0 0 2px #00ffff; /* Establece un trazo de color negro */
+  color: #000000; /* Color del texto del hint */
+}
+
+.input-field input:focus::placeholder,
+.input-field input:not(:placeholder-shown)::placeholder {
+  color: #5900ff; /* Cambia el color del texto del hint cuando el campo está enfocado o tiene texto */
+}
